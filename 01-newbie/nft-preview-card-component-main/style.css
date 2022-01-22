@@ -35,10 +35,16 @@ body {
 }
 
 .card {
-  max-width: 16rem;
+  width: 80%;
   background-color: var(--neutral-darkblue-card-bg);
   border-radius: 0.5rem;
   padding: 1rem;
+}
+
+@media only screen and (min-width: 480px) and (orientation: landscape) {
+  .card {
+    width: 16rem;
+  }
 }
 
 .image {
